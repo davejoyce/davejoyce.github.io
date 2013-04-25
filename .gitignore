@@ -30,7 +30,7 @@ local.properties
 
 ### Jekyll ###
 _site/*
-_theme_packages/*
+_theme_packages/
 
 Thumbs.db
 .DS_Store
