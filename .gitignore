@@ -29,13 +29,12 @@ local.properties
 .buildpath
 
 ### Jekyll ###
-_site/*
+_site/
 _theme_packages/
-
-Thumbs.db
-.DS_Store
-
 !.gitkeep
-
 .rbenv-version
 .rvmrc
+
+### Mac OSX ###
+Thumbs.db
+.DS_Store

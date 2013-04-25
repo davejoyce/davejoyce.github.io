@@ -26,13 +26,7 @@ associated with a single domain model or entity class. Each implementation of th
 then specific to a particular persistence platform. So, given a `Person` domain model class, the
 basic design would look something like
 
-    Person
-    |
-    PersonDAO
-    |
-    |-- FilePersonDAO
-    |
-    |-- RelationalDatabasePersonDAO
+![Composite DAO class diagram](http://davejoyce.github.io/images/Class-CompositeDAO.png)
  
 Simply stated, the Composite DAO pattern is an extension of the Data Access Object pattern, where
 the composite object is itself an implementation of the same DAO interface implemented by the
