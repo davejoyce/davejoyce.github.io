@@ -28,7 +28,7 @@ local.properties
 # PDT-specific
 .buildpath
 
-# Jekyll-specific
+### Jekyll ###
 _site/*
 _theme_packages/*
 
