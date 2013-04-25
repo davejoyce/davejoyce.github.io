@@ -14,7 +14,35 @@ that may sometimes be an alternative to the Composite DAO pattern.
 
 ### What is Composite DAO?
 
-Introduce _Composite DAO_ pattern here.
+Composite DAO is an object oriented design pattern. Actually, it is a combination of two design
+patterns:
+
+* [Composite pattern](http://www.oodesign.com/composite-pattern.html)
+* [Data Access Object pattern](http://en.wikipedia.org/wiki/Data_access_object)
+
+As most JEE and .NET developers are aware, DAO objects perform the platform-specific logic required
+to read, write, and delete persistent domain model object state. The DAO interface is typically
+associated with a single domain model or entity class. Each implementation of the DAO interface is
+then specific to a particular persistence platform. So, given a `Person` domain model class, the
+basic design would look something like
+
+    Person
+    |
+    PersonDAO
+    |
+    |-- FilePersonDAO
+    |
+    |-- RelationalDatabasePersonDAO
+ 
+Simply stated, the Composite DAO pattern is an extension of the Data Access Object pattern, where
+the composite object is itself an implementation of the same DAO interface implemented by the
+objects of which it is composed. If that sounds a little circular, it's because that circularity
+is intentional. To better understand the value of this pattern, let's talk through some examples
+where it is beneficial.
+
+#### Local vs Remote 
+
+#### Fast vs Slow
 
 ## Implementation Considerations
 
