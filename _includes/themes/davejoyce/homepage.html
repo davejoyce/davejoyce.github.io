@@ -1,0 +1,38 @@
+            <!-- Main hero unit -->
+            <div class="hero-unit">
+            	<div class="container">
+            		<div class="row">
+            			<div class="span9">
+			                <h1>Dave&apos;s Thoughts</h1>
+			                <h2 class="muted">Current thoughts on technology</h2>
+			                <p>Yet another technology blog. These are my thoughts and
+			                observations, as I stumble upon them. Sometimes, they're
+			                even worthwhile!</p>            			
+            			</div>
+            			<div class="span3">
+            				<h1>
+								<span class="icon-stack">
+									<i class="icon-check-empty icon-stack-base icon-large"></i>
+									<i class="icon-coffee icon-large"></i>
+								</span>
+            				</h1>
+            			</div>
+            		</div>
+                </div>
+            </div>
+
+            <!-- Recent posts & Project repos -->
+            <div class="row">
+                <div class="span6">
+                    <h2>Recent Posts</h2>
+					<ul class="posts">
+					  {% for post in site.posts %}
+					    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+					  {% endfor %}
+					</ul>
+                </div>
+                <div class="span6">
+                    <h2>Projects</h2>
+                    <p>A list of <a href="https://github.com/davejoyce" target="_blank">my project repos</a> will be added here.</p>
+               </div>
+            </div>
